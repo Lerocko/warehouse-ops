@@ -46,4 +46,4 @@ class NewShipment(View):
         Returns:
             HttpResponseRedirect: Redirect response to the photo upload URL.
         """
-        return redirect(reverse("shipment-photo-upload"))
+        return redirect(reverse("shipment-new"))
