@@ -1,0 +1,8 @@
+<!-- shipment_tracker/templates/shipment_tracker/photo_upload.html -->
+<h1>Upload Photos for Shipment {{ shipment.order_number }}</h1>
+
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="photos" multiple>
+    <button type="submit">Upload</button>
+</form>

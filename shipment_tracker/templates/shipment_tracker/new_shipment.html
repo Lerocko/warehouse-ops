@@ -1,0 +1,16 @@
+<!-- shipment_tracker/templates/shipment_tracker/new_shipment.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Shipment</title>
+</head>
+<body>
+    <h1>New Shipment</h1>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">Create Shipment</button>
+    </form>
+</body>
+</html>
